@@ -1,4 +1,4 @@
-# pyGPT
+# OpenAI Python GUI
  A python GUI to interact with OpenAI models
  
  https://beta.openai.com/docs/models/models
