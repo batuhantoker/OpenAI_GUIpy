@@ -24,8 +24,11 @@ https://beta.openai.com/account/api-keys
 # To dos
 
 1. Improve the main window
+
  a. Keep track and recording of the history and allow revisiting previous responses
+ 
  b. More API settings to be adjusted
+ 
 2. Improve the model interaction by providing previous prompt to the model, so that keeping up the dialogue.
 3. ?
 
