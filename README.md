@@ -4,7 +4,7 @@
 My blog post about the interface: https://medium.com/@tokerb/a-python-interface-to-interact-with-openai-models-d74903e2b4d
 
 # For more information about models and API key
-https://beta.openai.com/docs/models/models
+https://beta.openai.com/docs/models/models \\
 https://beta.openai.com/account/api-keys 
 
 # Screenshots
