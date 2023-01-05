@@ -1,5 +1,7 @@
 # pyGPT
  A python GUI to interact with OpenAI models
+ 
+ https://beta.openai.com/docs/models/models
 
 ![image](https://user-images.githubusercontent.com/55883119/210674305-c54a65f3-c5c9-4151-a412-df2b74b5dfb0.png)
 
