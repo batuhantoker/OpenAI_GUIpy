@@ -52,7 +52,7 @@ def generate_response():
         response_window.mainloop()
         # Run the window loopv
     else:
-        completions = openai.Completion.create(engine=model, prompt=prompt, max_tokens=int(max_token), n=1,stop=None,temperature=0.5)
+        completions = openai.Completion.create(engine=model, prompt=prompt, max_tokens=int(max_token), n=1,stop=None,temperature=temp_var.get())
         message = completions.choices[0].text
 
         # Store the prompt and response in the history
@@ -83,7 +83,7 @@ def generate_response():
 # Create the window
 window = tk.Tk()
 window.title("OpenAI GUI")
-window.geometry("700x350")
+window.geometry("700x400")
 # Create a frame for the model selection
 model_frame = tk.Frame(window)
 model_frame.pack()
@@ -142,7 +142,7 @@ api_key_label.pack(side="left")
 # Create an entry for the API key
 api_key_entry = tk.Entry(api_key_frame)
 api_key_entry.pack(side="left")
-api_key_entry.insert(0, "YOUR OpenAI API key")
+api_key_entry.insert(0, "Your OpenAI API key")
 #
 # Create a frame for the max token entry
 token_entry_frame = tk.Frame(window)
@@ -170,6 +170,13 @@ prompt_label.pack(side="left")
 prompt_entry = tk.Entry(prompt_frame,width=80)
 prompt_entry.place(height=200)
 prompt_entry.pack(side="left")
+
+# Create a frame for the temp entry
+temp_var = tk.DoubleVar()
+temp_frame = tk.Scale(window, label='Temperature', from_=0, to=1,resolution=0.1, orient=tk.HORIZONTAL, variable=temp_var)
+temp_frame.pack()
+
+
 
 # Create a button to generate the response
 generate_button = tk.Button(window, text="Generate Response", command=generate_response, font='Helvetica 20')
