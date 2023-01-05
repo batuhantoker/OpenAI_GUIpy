@@ -4,7 +4,7 @@ import os
 import requests
 from PIL import Image, ImageTk
 import time
-timestr = time.strftime("%Y%m%d")
+timestr = time.strftime("%Y%m%d-%H")
 
 # Create a list to store the previous prompts and responses
 history = []
@@ -83,7 +83,7 @@ def generate_response():
 # Create the window
 window = tk.Tk()
 window.title("OpenAI GUI")
-window.geometry("700x400")
+window.geometry("700x350")
 # Create a frame for the model selection
 model_frame = tk.Frame(window)
 model_frame.pack()
