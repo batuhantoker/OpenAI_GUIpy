@@ -142,7 +142,7 @@ api_key_label.pack(side="left")
 # Create an entry for the API key
 api_key_entry = tk.Entry(api_key_frame)
 api_key_entry.pack(side="left")
-api_key_entry.insert(0, "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")
+api_key_entry.insert(0, "YOUR OpenAI API key")
 #
 # Create a frame for the max token entry
 token_entry_frame = tk.Frame(window)
